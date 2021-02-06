@@ -58,6 +58,15 @@ public class DAOUsuarios {
                 )   > 0;
     }
 
+    public boolean update(ContentValues cv){
+        return   ad.update(
+                DB.TABLE_USUARIOS_NAME,
+                cv ,
+                "_id=?",
+                new String[]{ String.valueOf( cv.get("_ID"))}
+        )   > 0;
+    }
+
     public List<Usuario> getAll(){
         List<Usuario> lst = new ArrayList<Usuario>();
 
