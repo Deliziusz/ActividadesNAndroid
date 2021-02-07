@@ -63,7 +63,7 @@ public class DAOUsuarios {
                 DB.TABLE_USUARIOS_NAME,
                 cv ,
                 "_id=?",
-                new String[]{ String.valueOf( cv.get("_ID"))}
+                new String[]{ String.valueOf( cv.get("_id"))}
         )   > 0;
     }
 
