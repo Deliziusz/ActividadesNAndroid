@@ -41,7 +41,12 @@
             android:authorities="net.ivanvega.actividadesenandorid.provider"
             android:name=".provider.MiProveedorContenido"
             android:exported="true"
+            android:readPermission="net.ivanvega.actividadesenandorid.READ_PERMISSION"
+            android:writePermission="net.ivanvega.actividadesenandorid.WRITE_PERMISSION"
             ></provider>
     </application>
+
+    <permission android:name="net.ivanvega.actividadesenandorid.READ_PERMISSION"/>
+    <permission android:name="net.ivanvega.actividadesenandorid.WRITE_PERMISSION"/>
 
 </manifest>
